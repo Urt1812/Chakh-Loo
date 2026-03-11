@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes – Chakh लो</title>
+  <meta name="description" content="Discover detailed step-by-step recipes for your favourite snacks and dishes on Chakh लो." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Explore Foods</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class="nav-search"><input type="text" placeholder="Search snacks..." id="navSearchInput" /><button onclick="handleNavSearch()">🔍</button></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" data-emoji="📖">
+    <div class="container">
+      <h1>Our <span>Recipes</span></h1>
+      <p>Step-by-step guides to recreate your favourite snacks and meals at home.</p>
+    </div>
+  </section>
+
+  <section class="recipes-section">
+    <div class="container">
+      <div class="recipe-grid">
+
+        <!-- Samosa Recipe -->
+        <div class="recipe-card reveal" id="samosa">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Samosa" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Crispy Samosa</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 30 min</span><span>🍽️ 4 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>The ultimate Indian snack — crispy, golden, and filled with spiced potato and peas. Perfect with mint chutney.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Medium</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>🌶️ Medium</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">2 cups flour · 3 large potatoes · 1 cup peas · 1 tsp cumin seeds · 1 tsp garam masala · 1 tsp coriander powder · Salt to taste · Oil for frying</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Mix flour with salt and oil, add water slowly to form a stiff dough. Rest for 20 min.</li>
+                <li>Boil and mash potatoes. Mix in cooked peas, cumin, garam masala, coriander powder, and salt.</li>
+                <li>Roll dough into thin circles, cut in half, form cones, fill with potato mixture, and seal edges with water.</li>
+                <li>Deep fry on medium heat until golden and crispy (about 12–15 min). Serve hot with mint chutney.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=street" class="btn btn-sm">More Street Food →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biryani Recipe -->
+        <div class="recipe-card reveal" id="biryani">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80" alt="Biryani" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Chicken Biryani</h3>
+              <div class="recipe-meta"><span>⭐ 5.0</span><span>🕐 60 min</span><span>🍽️ 6 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>The king of Indian dishes. Fragrant basmati rice layered with tender chicken, fried onions, and saffron milk.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>45 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Hard</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>🌶️🌶️ Hot</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">500g basmati rice · 800g chicken · 2 onions (sliced) · 1 cup yogurt · 2 tbsp biryani masala · Saffron milk · Ghee · Mint leaves · Salt</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Marinate chicken with yogurt, biryani masala, and salt for at least 2 hours.</li>
+                <li>Fry onions until golden brown. Set aside half for garnish.</li>
+                <li>Cook marinated chicken in a heavy pot until 70% done. Layer par-boiled rice on top.</li>
+                <li>Add saffron milk, ghee, fried onions, and mint. Seal with dough or foil and cook on dum (low heat) for 25 min.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=indian" class="btn btn-sm">More Indian Food →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gulab Jamun -->
+        <div class="recipe-card reveal" id="gulabjamun">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Gulab Jamun" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Gulab Jamun</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 40 min</span><span>🍽️ 20 pieces</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Heavenly soft milk-solid balls soaked in fragrant rose and cardamom sugar syrup. India's favourite sweet.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>10 min</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>30 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Easy</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>None</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">1 cup milk powder · ¼ cup flour · ¼ tsp baking soda · Ghee or butter · Milk to knead · Oil for frying · 2 cups sugar · Rose water · Cardamom</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Mix milk powder, flour, and baking soda. Rub in 2 tsp ghee. Add milk slowly to form a soft dough.</li>
+                <li>Make a sugar syrup with 2 cups sugar, 1.5 cups water, rose water, and cardamom. Keep warm.</li>
+                <li>Roll dough into smooth balls (no cracks). Deep fry on very low heat, stirring continuously until dark golden.</li>
+                <li>Drop hot jamuns into warm syrup. Soak for at least 2 hours before serving.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=sweets" class="btn btn-sm">More Sweets →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Masala Chai -->
+        <div class="recipe-card reveal" id="chai">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" alt="Masala Chai" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Masala Chai</h3>
+              <div class="recipe-meta"><span>⭐ 4.8</span><span>🕐 10 min</span><span>🍽️ 2 cups</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>The soul of Indian mornings. A warming blend of tea, milk, ginger, and aromatic spices in every sip.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>2 min</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>8 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Easy</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>Mild warm</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">1 cup water · 1 cup milk · 2 tsp black tea leaves · 1-inch ginger (grated) · 3 cardamom pods (crushed) · 1 cinnamon stick · 2 cloves · Sugar to taste</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Bring water to boil. Add ginger, cardamom, cinnamon, and cloves. Simmer 3 min.</li>
+                <li>Add tea leaves and simmer for another 2 min until strong and fragrant.</li>
+                <li>Pour in milk and bring to a rolling boil. Add sugar to taste.</li>
+                <li>Strain into cups and serve hot with samosas or biscuits.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=beverages" class="btn btn-sm">More Beverages →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Masala Dosa -->
+        <div class="recipe-card reveal" id="dosa">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80" alt="Masala Dosa" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Masala Dosa</h3>
+              <div class="recipe-meta"><span>⭐ 4.7</span><span>🕐 25 min</span><span>🍽️ 4 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>South India's crispy thin crepe made from fermented rice-lentil batter, filled with spiced potato masala.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>Overnight soak</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>25 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Medium</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>🌶️ Mild</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">2 cups rice · ½ cup urad dal · Salt · Oil · 4 boiled potatoes · Onion · Mustard seeds · Turmeric · Curry leaves · Green chillies</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Soak rice and dal separately for 8 hours. Grind together into smooth batter. Ferment overnight.</li>
+                <li>For masala: sauté onions, mustard seeds, curry leaves, green chillies. Add mashed potatoes and turmeric.</li>
+                <li>Heat a tawa (griddle). Pour a ladle of batter, spread in circles to make a thin crepe.</li>
+                <li>Drizzle oil on edges. Once crisp, place masala filling in center, fold, and serve with sambar and chutney.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=indian" class="btn btn-sm">More Indian Food →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vada Pav -->
+        <div class="recipe-card reveal" id="vadapav">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=80" alt="Vada Pav" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Vada Pav</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 25 min</span><span>🍽️ 4 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Mumbai's beloved street food — a spiced potato fritter sandwiched in soft bread rolls with fiery chutneys.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep Time</span><strong>10 min</strong></div>
+              <div class="recipe-info-item"><span>Cook Time</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Difficulty</span><strong>Easy</strong></div>
+              <div class="recipe-info-item"><span>Spice Level</span><strong>🌶️🌶️ Spicy</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>📝 Ingredients</h4>
+              <p style="margin-bottom:12px; color: var(--text-light); font-size: 0.9rem;">4 large potatoes (boiled) · 1 cup chickpea flour · Mustard seeds · Curry leaves · Green chillies · Turmeric · 4 pav buns · Dry garlic chutney · Oil</p>
+              <h4>👨‍🍳 Steps</h4>
+              <ol>
+                <li>Mash potatoes. Season with fried mustard seeds, curry leaves, green chillies, and turmeric. Form into balls.</li>
+                <li>Make batter with chickpea flour, salt, turmeric, and water. Coat potato balls in batter.</li>
+                <li>Deep fry vadas until crispy and golden on all sides.</li>
+                <li>Slit pav buns, spread garlic chutney and green chutney. Place hot vada inside and serve immediately.</li>
+              </ol>
+            </div>
+            <div style="margin-top: 20px;">
+              <a href="menu.html?cat=street" class="btn btn-sm">More Street Food →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+          <p>Your ultimate destination for exploring delicious snacks and dishes from cultures around the world.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">📸</a><a href="#" class="social-btn">👍</a><a href="#" class="social-btn">▶️</a><a href="#" class="social-btn">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">All Foods</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="blog.html">Food Blog</a></li></ul></div>
+        <div class="footer-links"><h4>Categories</h4><ul><li><a href="menu.html?cat=street">Street Food</a></li><li><a href="menu.html?cat=indian">Indian Snacks</a></li><li><a href="menu.html?cat=sweets">Sweets</a></li><li><a href="menu.html?cat=healthy">Healthy</a></li></ul></div>
+        <div class="footer-links"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="#">About Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Submit a Recipe</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Chakh लो. Made with ❤️ and a lot of hunger.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

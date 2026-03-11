@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Blog – Chakh लो</title>
+  <meta name="description" content="Read the latest articles about street snacks, food culture, cooking tips, and more on Chakh लो Blog." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Explore Foods</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class="nav-search"><input type="text" placeholder="Search snacks..." id="navSearchInput" /><button onclick="handleNavSearch()">🔍</button></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" data-emoji="✍️">
+    <div class="container">
+      <h1>The <span>Chakh लो</span> Blog</h1>
+      <p>Stories, tips, and deep dives into the world's most delicious bites.</p>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  <section style="padding: 72px 0 0; background: var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">📰 Featured Article</span>
+        <h2>Editor's <em>Pick</em></h2>
+      </div>
+      <div style="background: white; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); display: grid; grid-template-columns: 1.2fr 1fr; min-height: 420px;" class="reveal">
+        <div style="overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=800&q=85" alt="Street Food Culture" style="width:100%; height:100%; object-fit: cover; transition: transform 0.5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" loading="lazy"/>
+        </div>
+        <div style="padding: 48px 40px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="blog-meta">
+            <span class="blog-cat">🛺 Street Food</span>
+            <span class="blog-date">June 15, 2025</span>
+          </div>
+          <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--dark); margin-bottom: 16px; line-height: 1.2;">Why Street Food is the<br/>Soul of Every City</h2>
+          <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 28px; font-size: 1rem;">From Mumbai's Vada Pav to Bangkok's Pad Thai, street food is more than just a meal — it's a cultural artifact, a social equalizer, and the truest expression of a region's food identity. Discover why food lovers travel thousands of miles just to eat from a cart on a noisy corner.</p>
+          <a href="#" class="blog-read-more">Read Full Article →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">📚 Latest Articles</span>
+        <h2>Fresh from the <em>Kitchen</em></h2>
+      </div>
+      <div class="blog-grid">
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80" alt="Samosa History" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🫙 Indian Snacks</span>
+              <span class="blog-date">June 10, 2025</span>
+            </div>
+            <h3>The Fascinating 1000-Year History of the Samosa</h3>
+            <p>Originally from Central Asia and known as "sambosa," the samosa travelled through Persia and the Middle East before becoming India's favourite snack. Explore its incredible journey.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80" alt="Spices" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🌶️ Cooking Tips</span>
+              <span class="blog-date">June 5, 2025</span>
+            </div>
+            <h3>10 Essential Indian Spices Every Home Cook Needs</h3>
+            <p>Cumin, coriander, turmeric, cardamom — the building blocks of Indian cuisine. We break down what each spice does and how to use them to transform your everyday cooking.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&q=80" alt="Sweets" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🍮 Sweets</span>
+              <span class="blog-date">May 28, 2025</span>
+            </div>
+            <h3>A Sweet Tour: India's Most Iconic Mithai by Region</h3>
+            <p>From Rasgulla in Bengal to Mysore Pak in Karnataka to Ladoo from Rajasthan — India's sweets are as diverse as its languages. This guide takes you on a delicious regional tour.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Healthy Snacks" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🥗 Healthy Eating</span>
+              <span class="blog-date">May 20, 2025</span>
+            </div>
+            <h3>Guilt-Free Snacking: 7 Healthy Bites That Actually Taste Amazing</h3>
+            <p>Who said healthy snacks have to be boring? From roasted makhana to sprouted moong chaat, these snacks prove you can eat well and still satisfy those cravings.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500&q=80" alt="Beverages" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🥤 Beverages</span>
+              <span class="blog-date">May 15, 2025</span>
+            </div>
+            <h3>Lassi, Chaas, Sharbat: India's Greatest Summer Drinks Ranked</h3>
+            <p>As temperatures rise, India's traditional drink culture comes alive. We rank and review the country's most refreshing summer beverages — from sweet mango lassi to tangy aam panna.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Fast Food" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🍕 Fast Food</span>
+              <span class="blog-date">May 8, 2025</span>
+            </div>
+            <h3>The Rise of Indian-Fusion Fast Food: A New Flavour Revolution</h3>
+            <p>Pizza topped with paneer tikka, burgers with mint chutney sauces, tacos stuffed with Amritsari fish — India's fusion food scene is exploding. Here's what's leading the charge.</p>
+            <a href="#" class="blog-read-more">Read More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter mini CTA -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="nl-emojis">🍕 🧆 🍜 🍩 🥙 🍣</div>
+        <h2>Get Fresh Articles Weekly!</h2>
+        <p>Subscribe and never miss a new food story, recipe reveal, or snack discovery.</p>
+        <form class="nl-form" onsubmit="handleSubscribe(event)">
+          <div class="nl-input-group">
+            <input type="email" placeholder="Your email address..." required id="nlEmail"/>
+            <button type="submit" class="btn btn-primary">Subscribe 🎉</button>
+          </div>
+        </form>
+        <div id="nlSuccess" class="nl-success" style="display:none;">🎊 You're in! Welcome to the Chakh लो food family!</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+          <p>Your ultimate destination for exploring delicious snacks and dishes from cultures around the world.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn">📸</a><a href="#" class="social-btn">👍</a><a href="#" class="social-btn">▶️</a><a href="#" class="social-btn">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">All Foods</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="blog.html">Food Blog</a></li></ul></div>
+        <div class="footer-links"><h4>Categories</h4><ul><li><a href="menu.html?cat=street">Street Food</a></li><li><a href="menu.html?cat=indian">Indian Snacks</a></li><li><a href="menu.html?cat=sweets">Sweets</a></li><li><a href="menu.html?cat=healthy">Healthy</a></li></ul></div>
+        <div class="footer-links"><h4>Company</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="#">About Us</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Submit a Recipe</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Chakh लो. Made with ❤️ and a lot of hunger.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
