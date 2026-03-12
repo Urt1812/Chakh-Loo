@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Chakh लो | Bihar &amp; Mithila Food Stories</title>
+  <meta name="description" content="Stories, culture, and recipes from the heart of Bihar &amp; Mithila — Litti Chokha, Thekua, Samosa, Nimki and more. 100% Pure Veg." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Explore Foods</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class="nav-search"><input type="text" placeholder="Search snacks..." id="navSearchInput" /><button onclick="handleNavSearch()">🔍</button></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" data-emoji="✍️">
+    <div class="container">
+      <h1>The <span>Chakh लो</span> Blog</h1>
+      <p>Stories, culture &amp; food wisdom straight from the heart of Bihar &amp; Mithila.</p>
+    </div>
+  </section>
+
+  <!-- Green Bar -->
+  <div style="background:linear-gradient(135deg,#0d5e1e,#1a8a30);padding:12px 24px;text-align:center;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;">
+      <span style="color:#86efac;font-weight:800;font-size:0.85rem;display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#4ade80;border-radius:50%;border:2px solid white;display:inline-block;"></span> 100% Pure Veg</span>
+      <span style="color:rgba(255,255,255,0.4);">|</span>
+      <span style="color:white;font-weight:700;font-size:0.85rem;">🫙 Only Pure Desi Ghee</span>
+      <span style="color:rgba(255,255,255,0.4);">|</span>
+      <span style="color:#fca5a5;font-weight:700;font-size:0.85rem;">❌ No Refined Oil &nbsp;|&nbsp; ❌ No Palm Oil &nbsp;|&nbsp; ❌ No Dalda &nbsp;|&nbsp; ❌ No Vanaspati &nbsp;|&nbsp; ❌ No Preservatives</span>
+    </div>
+  </div>
+
+  <!-- Featured Post -->
+  <section style="padding:72px 0 0;background:var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">🔥 Featured Story</span>
+        <h2>Editor's <em>Pick</em></h2>
+      </div>
+      <div style="background:white;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1.2fr 1fr;min-height:420px;" class="reveal">
+        <div style="overflow:hidden;position:relative;">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85" alt="Litti Chokha Bihar" style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'" loading="lazy"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,rgba(0,0,0,0.08));pointer-events:none;"></div>
+        </div>
+        <div style="padding:48px 40px;display:flex;flex-direction:column;justify-content:center;">
+          <div class="blog-meta">
+            <span class="blog-cat">🔥 Bihar Food</span>
+            <span class="blog-date">March 2025</span>
+          </div>
+          <h2 style="font-family:var(--font-display);font-size:1.8rem;color:var(--dark);margin-bottom:16px;line-height:1.2;">Litti Chokha — Bihar's Greatest<br/>Gift to Indian Cuisine</h2>
+          <p style="color:var(--text-light);line-height:1.8;margin-bottom:28px;font-size:1rem;">Baked on open charcoal fire, dipped in pure Desi Ghee, served with smoky chokha — Litti Chokha is not just a dish, it is the soul of Bihar. Discover the history, tradition and why this humble meal is now winning hearts across India and beyond.</p>
+          <a href="contact.html" class="blog-read-more">Order Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">📚 Food Stories</span>
+        <h2>From the Heart of <em>Bihar &amp; Mithila</em></h2>
+      </div>
+      <div class="blog-grid">
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80" alt="Samosa History" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🫔 Samosa Culture</span>
+              <span class="blog-date">Feb 2025</span>
+            </div>
+            <h3>The Samosa: India's Favourite Snack with a Bihari Twist</h3>
+            <p>While samosa is loved across India, the Bihari samosa with kaale chole and spiced aloo chutney is a class of its own. Here's the story behind this iconic combination.</p>
+            <a href="menu.html?cat=samosa" class="blog-read-more">Explore Samosas →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&q=80" alt="Thekua Chhath" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🪔 Mithila Tradition</span>
+              <span class="blog-date">Jan 2025</span>
+            </div>
+            <h3>Thekua — The Sacred Sweet of Chhath Puja &amp; Mithila's Pride</h3>
+            <p>No Chhath Puja is complete without Thekua. Made from whole wheat aata and jaggery, this simple sweet carries centuries of Mithila tradition, love, and devotion.</p>
+            <a href="menu.html?cat=thekua" class="blog-read-more">Try Thekua →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80" alt="Nimki Bihari" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🥨 Bihar Snacks</span>
+              <span class="blog-date">Dec 2024</span>
+            </div>
+            <h3>Nimki — The Crispy Soul of Every Bihari Kitchen</h3>
+            <p>From morning chai to festival celebrations, Nimki is a constant in every Bihari home. We explore why this simple, crispy namkeen made with desi ghee is truly irreplaceable.</p>
+            <a href="menu.html?cat=nimki" class="blog-read-more">Try Nimki →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="Desi Ghee Cooking" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🫙 Pure Cooking</span>
+              <span class="blog-date">Nov 2024</span>
+            </div>
+            <h3>Why We Cook Only in Pure Desi Ghee — And Why It Matters</h3>
+            <p>Refined oil, palm oil, Dalda — our kitchen uses none of them. Pure Desi Ghee is the only fat we trust. Here's the science, the tradition, and the flavour behind our commitment.</p>
+            <a href="index.html#veg-notice" class="blog-read-more">Our Promise →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=500&q=80" alt="Mithila Culture" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🏞️ Mithila Heritage</span>
+              <span class="blog-date">Oct 2024</span>
+            </div>
+            <h3>Mithila — The Ancient Kingdom Where Food is Art &amp; Devotion</h3>
+            <p>The land of King Janaka, the birthplace of Sita, famous for Madhubani art — Mithila has a culinary tradition as rich as its culture. We take you through the food, the festivals, and the flavours.</p>
+            <a href="contact.html" class="blog-read-more">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card reveal">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80" alt="Delhi Bihari food" loading="lazy"/>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-cat">🏙️ Delhi Food</span>
+              <span class="blog-date">Sep 2024</span>
+            </div>
+            <h3>Bihar Comes to Delhi — How Chakh लो is Keeping the Tradition Alive</h3>
+            <p>Made fresh in Delhi every day, our food carries the authentic taste of Bihar &amp; Mithila. No shortcuts, no preservatives — just pure flavours cooked exactly the way your dadi made them.</p>
+            <a href="menu.html" class="blog-read-more">Order Now →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section style="padding:72px 0;background:linear-gradient(135deg,#1A1A2E,#2D1B00);">
+    <div class="container">
+      <div style="text-align:center;">
+        <div style="font-size:3rem;margin-bottom:16px;">🍛</div>
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);color:white;margin-bottom:14px;">Ready to <span style="color:var(--yellow);">Taste</span> Bihar?</h2>
+        <p style="color:rgba(255,255,255,0.65);font-size:1.05rem;max-width:500px;margin:0 auto 32px;line-height:1.7;">Order authentic Litti Chokha, Samosa, Thekua &amp; Nimki — made fresh in Delhi with zero preservatives.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="menu.html" class="btn btn-primary">🍽️ Explore &amp; Order</a>
+          <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:white;border-radius:50px;padding:14px 28px;font-weight:800;font-size:1rem;transition:all 0.3s;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Order
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" class="fab-whatsapp" title="Order on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+          <p>Authentic Bihar &amp; Mithila food, made fresh in Delhi — cooked only in Pure Desi Ghee. No preservatives, no shortcuts.</p>
+          <div style="margin:14px 0 4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📍 Delhi, India</div>
+          <div style="margin-bottom:4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📞 <a href="tel:+919217556456" style="color:rgba(255,255,255,0.75);">+91 92175 56456</a></div>
+          <div style="margin-bottom:18px;color:rgba(255,255,255,0.6);font-size:0.88rem;">✉️ <a href="mailto:chakhloobyngoc@gmail.com" style="color:rgba(255,255,255,0.75);">chakhloobyngoc@gmail.com</a></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/chakhloobyngoc/" target="_blank" class="social-btn" title="Instagram">📸</a>
+            <a href="https://www.facebook.com/Chakhloobyngoc" target="_blank" class="social-btn" title="Facebook">👍</a>
+            <a href="https://wa.me/919217556456" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">All Foods</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="blog.html">Food Blog</a></li></ul></div>
+        <div class="footer-links"><h4>Categories</h4><ul><li><a href="menu.html?cat=samosa">🫔 Samosa</a></li><li><a href="menu.html?cat=litti">🔥 Litti</a></li><li><a href="menu.html?cat=thekua">🍪 Thekua</a></li><li><a href="menu.html?cat=nimki">🥨 Nimki</a></li></ul></div>
+        <div class="footer-links"><h4>Contact Us</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="tel:+919217556456">📞 +91 92175 56456</a></li><li><a href="mailto:chakhloobyngoc@gmail.com">✉️ Email Us</a></li><li><a href="https://wa.me/919217556456" target="_blank">💬 WhatsApp Order</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Chakh लो. 🌿 100% Pure Vegetarian. Proudly made in Delhi, inspired by Bihar &amp; Mithila. ❤️ Pure Desi Ghee.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

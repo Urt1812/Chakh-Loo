@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Chakh लो | Delhi Bihar Mithila Food</title>
+  <meta name="description" content="Contact Chakh लो — order Bihar &amp; Mithila food in Delhi. Call, WhatsApp, email or follow us on Instagram &amp; Facebook." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Contact page extras ── */
+    .contact-hero-bar {
+      background: linear-gradient(135deg,#0d5e1e,#1a8a30);
+      padding: 12px 24px;
+      text-align: center;
+      display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+    }
+    .contact-hero-bar span { color: white; font-weight: 700; font-size: 0.85rem; }
+    .contact-hero-bar .dot { width:12px;height:12px;background:#4ade80;border-radius:50%;border:2px solid white;display:inline-block; }
+
+    /* ── Contact grid ── */
+    .cpage-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 64px 0 72px;
+    }
+
+    /* Info cards */
+    .cinfo-cards { display: flex; flex-direction: column; gap: 16px; }
+    .cinfo-card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border-left: 4px solid transparent;
+    }
+    .cinfo-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(0,0,0,0.12); }
+    .cinfo-card.orange { border-left-color: var(--orange); }
+    .cinfo-card.green  { border-left-color: #25D366; }
+    .cinfo-card.blue   { border-left-color: #3b82f6; }
+    .cinfo-card.insta  { border-left-color: #e1306c; }
+    .cinfo-card.fb     { border-left-color: #1877f2; }
+    .cinfo-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; flex-shrink: 0;
+    }
+    .cinfo-icon.orange { background: #fff3ec; }
+    .cinfo-icon.green  { background: #ecfdf5; }
+    .cinfo-icon.blue   { background: #eff6ff; }
+    .cinfo-icon.insta  { background: #fce7f3; }
+    .cinfo-icon.fb     { background: #eff6ff; }
+    .cinfo-text h4 { font-weight: 800; color: var(--dark); font-size: 0.95rem; margin-bottom: 4px; }
+    .cinfo-text a, .cinfo-text p { color: var(--text-light); font-size: 0.9rem; line-height: 1.5; }
+    .cinfo-text a { font-weight: 700; color: var(--orange); text-decoration: none; }
+    .cinfo-text a:hover { text-decoration: underline; }
+
+    /* Social showcase */
+    .social-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .social-showcase-card {
+      border-radius: 18px;
+      padding: 22px 20px;
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+    .social-showcase-card:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,0.18); }
+    .social-showcase-card.insta {
+      background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+      color: white;
+    }
+    .social-showcase-card.fb {
+      background: linear-gradient(135deg,#1877f2,#0d5fba);
+      color: white;
+    }
+    .social-showcase-card .s-icon { font-size: 2.2rem; margin-bottom: 10px; }
+    .social-showcase-card .s-name { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 4px; }
+    .social-showcase-card .s-handle { font-size: 0.82rem; opacity: 0.85; }
+    .social-showcase-card .s-cta {
+      margin-top: 14px;
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+    .social-showcase-card:hover .s-cta { background: rgba(255,255,255,0.35); }
+
+    /* WhatsApp big card */
+    .wa-banner {
+      background: linear-gradient(135deg,#25D366,#128C7E);
+      border-radius: 18px;
+      padding: 28px 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .wa-banner:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(37,211,102,0.35); }
+    .wa-banner svg { flex-shrink: 0; }
+    .wa-banner-text h4 { color: white; font-weight: 800; font-size: 1.05rem; margin-bottom: 4px; }
+    .wa-banner-text p { color: rgba(255,255,255,0.8); font-size: 0.88rem; }
+    .wa-banner-arrow { margin-left: auto; color: white; font-size: 1.5rem; flex-shrink: 0; }
+
+    /* Contact form */
+    .cform-wrap {
+      background: white;
+      border-radius: 24px;
+      padding: 40px 36px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.09);
+    }
+    .cform-wrap h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .cform-wrap > p { color: var(--text-light); font-size: 0.9rem; margin-bottom: 28px; }
+
+    /* Location strip */
+    .location-strip {
+      background: linear-gradient(135deg,#1A1A2E,#2D1B00);
+      border-radius: 20px;
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+    .location-strip-text h3 {
+      font-family: var(--font-display);
+      color: white;
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+    .location-strip-text p { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.6; max-width: 480px; }
+    .location-strip-btns { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+
+    /* FAQ */
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      padding: 22px 26px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      border-left: 4px solid var(--orange);
+    }
+    .faq-item h4 { font-weight: 800; color: var(--dark); margin-bottom: 8px; font-size: 0.97rem; }
+    .faq-item p { color: var(--text-light); line-height: 1.7; font-size: 0.92rem; }
+
+    @media (max-width: 768px) {
+      .cpage-grid { grid-template-columns: 1fr; gap: 32px; padding: 40px 0 52px; }
+      .location-strip { padding: 28px 24px; flex-direction: column; text-align: center; }
+      .location-strip-btns { justify-content: center; }
+      .social-showcase { grid-template-columns: 1fr 1fr; }
+      .cform-wrap { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Explore Foods</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><div class="nav-search"><input type="text" placeholder="Search snacks..." id="navSearchInput" /><button onclick="handleNavSearch()">🔍</button></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" data-emoji="📬">
+    <div class="container">
+      <h1>Reach <span>Out to Us</span></h1>
+      <p>Order food, collaborate, or just say hello — we're always happy to connect!</p>
+    </div>
+  </section>
+
+  <!-- Green pill bar -->
+  <div class="contact-hero-bar">
+    <span><span class="dot"></span> &nbsp;100% Pure Veg</span>
+    <span style="opacity:.4;">|</span>
+    <span>🫙 Only Pure Desi Ghee</span>
+    <span style="opacity:.4;">|</span>
+    <span style="color:#fca5a5;">❌ No Refined Oil &nbsp;|&nbsp; ❌ No Dalda &nbsp;|&nbsp; ❌ No Preservatives</span>
+  </div>
+
+  <!-- Main contact section -->
+  <section style="background:var(--cream);">
+    <div class="container">
+      <div class="cpage-grid">
+
+        <!-- LEFT: Info cards + social -->
+        <div class="reveal">
+          <span class="tag" style="margin-bottom:20px;display:inline-block;">📲 Get in Touch</span>
+          <h2 style="font-family:var(--font-display);font-size:1.9rem;color:var(--dark);margin-bottom:8px;line-height:1.2;">Let's Connect <em style="color:var(--orange);">Over Food</em></h2>
+          <p style="color:var(--text-light);font-size:0.95rem;margin-bottom:28px;line-height:1.7;">Have a question, want to place a bulk order, or simply want to talk Bihari food? We'd love to hear from you.</p>
+
+          <div class="cinfo-cards">
+
+            <div class="cinfo-card orange">
+              <div class="cinfo-icon orange">📞</div>
+              <div class="cinfo-text">
+                <h4>Call / WhatsApp</h4>
+                <a href="tel:+919217556456">+91 92175 56456</a>
+                <p>Mon – Sat, 10 AM – 7 PM IST</p>
+              </div>
+            </div>
+
+            <div class="cinfo-card blue">
+              <div class="cinfo-icon blue">✉️</div>
+              <div class="cinfo-text">
+                <h4>Email Us</h4>
+                <a href="mailto:chakhloobyngoc@gmail.com">chakhloobyngoc@gmail.com</a>
+                <p>We reply within 24 hours</p>
+              </div>
+            </div>
+
+            <div class="cinfo-card orange">
+              <div class="cinfo-icon orange">📍</div>
+              <div class="cinfo-text">
+                <h4>Made in Delhi</h4>
+                <p>Rooted in Bihar &amp; Mithila tradition — fresh every day in Delhi, India 🇮🇳</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- WhatsApp order banner -->
+          <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" class="wa-banner">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <div class="wa-banner-text">
+              <h4>Order via WhatsApp</h4>
+              <p>Tap to send us your order instantly on +91 92175 56456</p>
+            </div>
+            <div class="wa-banner-arrow">→</div>
+          </a>
+
+          <!-- Social cards -->
+          <h3 style="font-family:var(--font-display);color:var(--dark);font-size:1.15rem;margin:28px 0 14px;">Follow Our Food Journey 🍛</h3>
+          <div class="social-showcase">
+            <a href="https://www.instagram.com/chakhloobyngoc/" target="_blank" class="social-showcase-card insta">
+              <div class="s-icon">📸</div>
+              <div class="s-name">Instagram</div>
+              <div class="s-handle">@chakhloobyngoc</div>
+              <div class="s-cta">Follow Us →</div>
+            </a>
+            <a href="https://www.facebook.com/Chakhloobyngoc" target="_blank" class="social-showcase-card fb">
+              <div class="s-icon">👍</div>
+              <div class="s-name">Facebook</div>
+              <div class="s-handle">Chakhloobyngoc</div>
+              <div class="s-cta">Like Our Page →</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Contact form -->
+        <div class="reveal">
+          <div class="cform-wrap">
+            <h3>Send Us a Message 💬</h3>
+            <p>Questions, orders, feedback — we read every message!</p>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name *</label>
+                  <input type="text" id="fname" placeholder="Rahul" required />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name *</label>
+                  <input type="text" id="lname" placeholder="Sharma" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cemail">Email Address *</label>
+                <input type="email" id="cemail" placeholder="rahul@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cphone">Phone / WhatsApp</label>
+                <input type="tel" id="cphone" placeholder="+91 98765 XXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="order">Place an Order</option>
+                  <option value="bulk">Bulk / Catering Order</option>
+                  <option value="recipe">Submit a Recipe</option>
+                  <option value="collab">Collaboration / Partnership</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" rows="4" placeholder="Tell us what you'd like to order or ask..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:12px;">Send Message 🚀</button>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#25D366;color:white;border-radius:50px;padding:14px;font-weight:800;font-size:0.95rem;transition:all 0.3s;">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Quick Order on WhatsApp
+              </a>
+            </form>
+            <div id="contactSuccess" class="form-success" style="display:none;">
+              🎉 Message received! We'll get back to you soon. Or just WhatsApp us for faster response!
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location strip -->
+  <section style="background:white;padding:52px 0;">
+    <div class="container">
+      <div class="location-strip reveal">
+        <div class="location-strip-text">
+          <h3>📍 Delhi, India — Rooted in Bihar &amp; Mithila</h3>
+          <p>Every dish is made fresh in Delhi using traditional Bihar &amp; Mithila recipes. Zero preservatives. Pure Desi Ghee. Authentic flavours delivered to your door.</p>
+          <p style="margin-top:10px;color:rgba(255,255,255,0.5);font-size:0.88rem;">📞 +91 92175 56456 &nbsp;·&nbsp; ✉️ chakhloobyngoc@gmail.com</p>
+        </div>
+        <div class="location-strip-btns">
+          <a href="menu.html" class="btn btn-primary">🍽️ Order Now</a>
+          <a href="https://wa.me/919217556456" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;border-radius:50px;padding:14px 24px;font-weight:800;font-size:0.95rem;">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:60px 0 72px;background:var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">❓ FAQs</span>
+        <h2>Commonly Asked <em>Questions</em></h2>
+      </div>
+      <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;">
+        <div class="faq-item reveal">
+          <h4>🛒 How do I place an order?</h4>
+          <p>You can order directly via WhatsApp at <a href="https://wa.me/919217556456" style="color:var(--orange);font-weight:700;">+91 92175 56456</a>, use the "Add to Cart" on our menu page, or fill the contact form above. We'll confirm your order and delivery details.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h4>🍱 Do you do bulk / catering orders?</h4>
+          <p>Yes! We accept bulk orders for parties, events, offices, and celebrations. WhatsApp or email us at <a href="mailto:chakhloobyngoc@gmail.com" style="color:var(--orange);font-weight:700;">chakhloobyngoc@gmail.com</a> at least 2 days in advance.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h4>🌿 Is the food really 100% vegetarian?</h4>
+          <p>Absolutely. We are a 100% pure vegetarian kitchen. No meat, no eggs, no non-veg ingredients of any kind. We also use no Dalda, no refined oil, no palm oil, and no preservatives — only Pure Desi Ghee.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h4>📸 How can we follow you on social media?</h4>
+          <p>Follow us on <a href="https://www.instagram.com/chakhloobyngoc/" target="_blank" style="color:#e1306c;font-weight:700;">Instagram @chakhloobyngoc</a> and like our <a href="https://www.facebook.com/Chakhloobyngoc" target="_blank" style="color:#1877f2;font-weight:700;">Facebook page Chakhloobyngoc</a> for daily food updates, behind-the-scenes, and special offers!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" class="fab-whatsapp" title="Order on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+          <p>Authentic Bihar &amp; Mithila food, made fresh in Delhi — cooked only in Pure Desi Ghee. No preservatives, no shortcuts.</p>
+          <div style="margin:14px 0 4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📍 Delhi, India</div>
+          <div style="margin-bottom:4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📞 <a href="tel:+919217556456" style="color:rgba(255,255,255,0.75);">+91 92175 56456</a></div>
+          <div style="margin-bottom:18px;color:rgba(255,255,255,0.6);font-size:0.88rem;">✉️ <a href="mailto:chakhloobyngoc@gmail.com" style="color:rgba(255,255,255,0.75);">chakhloobyngoc@gmail.com</a></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/chakhloobyngoc/" target="_blank" class="social-btn" title="Instagram">📸</a>
+            <a href="https://www.facebook.com/Chakhloobyngoc" target="_blank" class="social-btn" title="Facebook">👍</a>
+            <a href="https://wa.me/919217556456" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">All Foods</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="blog.html">Food Blog</a></li></ul></div>
+        <div class="footer-links"><h4>Categories</h4><ul><li><a href="menu.html?cat=samosa">🫔 Samosa</a></li><li><a href="menu.html?cat=litti">🔥 Litti</a></li><li><a href="menu.html?cat=thekua">🍪 Thekua</a></li><li><a href="menu.html?cat=nimki">🥨 Nimki</a></li></ul></div>
+        <div class="footer-links"><h4>Contact Us</h4><ul>
+          <li><a href="tel:+919217556456">📞 +91 92175 56456</a></li>
+          <li><a href="mailto:chakhloobyngoc@gmail.com">✉️ Email Us</a></li>
+          <li><a href="https://wa.me/919217556456" target="_blank">💬 WhatsApp Order</a></li>
+          <li><a href="https://www.instagram.com/chakhloobyngoc/" target="_blank">📸 Instagram</a></li>
+          <li><a href="https://www.facebook.com/Chakhloobyngoc" target="_blank">👍 Facebook</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Chakh लो. 🌿 100% Pure Vegetarian. Proudly made in Delhi, inspired by Bihar &amp; Mithila. ❤️ Pure Desi Ghee.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('contactSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

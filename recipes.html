@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes – Chakh लो | Bihar &amp; Mithila 100% Pure Veg</title>
+  <meta name="description" content="Step-by-step pure vegetarian recipes for Samosa, Litti Chokha, Thekua, and Nimki — authentic Bihar &amp; Mithila dishes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Explore Foods</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><div class="nav-search"><input type="text" placeholder="Search snacks..." id="navSearchInput" /><button onclick="handleNavSearch()">🔍</button></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" data-emoji="📖">
+    <div class="container">
+      <h1>Our <span>Recipes</span></h1>
+      <p>Authentic Bihar &amp; Mithila recipes — step-by-step guides to recreate these classics at home.</p>
+    </div>
+  </section>
+
+  <!-- Veg + No Preservatives Notice Bar -->
+  <div style="background:linear-gradient(135deg,#0d5e1e,#1a8a30);padding:12px 24px;text-align:center;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;">
+      <span style="color:#86efac;font-weight:800;font-size:0.85rem;display:flex;align-items:center;gap:6px;"><span style="width:12px;height:12px;background:#4ade80;border-radius:50%;border:2px solid white;display:inline-block;"></span> 100% Pure Veg</span>
+      <span style="color:rgba(255,255,255,0.4);">|</span>
+      <span style="color:white;font-weight:700;font-size:0.85rem;">🫙 Only Pure Desi Ghee</span>
+      <span style="color:rgba(255,255,255,0.4);">|</span>
+      <span style="color:#fca5a5;font-weight:700;font-size:0.85rem;">❌ No Refined Oil &nbsp;|&nbsp; ❌ No Palm Oil &nbsp;|&nbsp; ❌ No Dalda &nbsp;|&nbsp; ❌ No Vanaspati &nbsp;|&nbsp; ❌ No Preservatives</span>
+    </div>
+  </div>
+
+  <section class="recipes-section">
+    <div class="container">
+      <div class="recipe-grid">
+
+        <!-- Aloo Samosa -->
+        <div class="recipe-card reveal" id="samosa">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Aloo Samosa" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Aloo Samosa</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 40 min</span><span>🍽️ 6 pcs</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>The iconic crispy samosa with spiced aloo filling. Serve with Kaale Chole, Matar Chole, or Aloo Chutney.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Serves</span><strong>6</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Prepare the dough with maida, salt, and water. Rest for 20 minutes.</li>
+                <li>Boil and mash potatoes. Mix with cumin, coriander, green chilli, and garam masala.</li>
+                <li>Roll out dough into thin circles, cut in half and form cones.</li>
+                <li>Fill each cone with potato mixture and seal the edges firmly.</li>
+                <li>Deep fry in Pure Desi Ghee on medium heat until golden and crispy.</li>
+                <li>Serve hot with your choice of chole or chutney.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=samosa" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Samosa</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Aloo%20Samosa" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paneer Samosa -->
+        <div class="recipe-card reveal" id="paneersam">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Paneer Samosa" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Paneer Samosa</h3>
+              <div class="recipe-meta"><span>⭐ 4.8</span><span>🕐 35 min</span><span>🍽️ 6 pcs</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Crispy samosa shells filled with richly spiced fresh paneer — a premium vegetarian favourite.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Serves</span><strong>6</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Prepare samosa dough with maida and rest for 20 minutes.</li>
+                <li>Crumble paneer and sauté with onion, green chilli, garam masala, and coriander leaves.</li>
+                <li>Roll dough, form cones, and fill with paneer mixture.</li>
+                <li>Seal edges firmly and deep fry in Pure Desi Ghee until golden.</li>
+                <li>Serve hot with mint chutney.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=samosa" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Samosa</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Paneer%20Samosa" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Litti Chokha (Aata, Baked) -->
+        <div class="recipe-card reveal" id="litti">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Litti Chokha" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Litti Chokha (Aata, Baked)</h3>
+              <div class="recipe-meta"><span>⭐ 5.0</span><span>🕐 60 min</span><span>🍽️ 4 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Bihar's pride — whole wheat aata balls stuffed with sattu, baked on fire, dipped in pure Desi Ghee, served with smoky chokha.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>30 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>30 min</strong></div>
+              <div class="recipe-info-item"><span>Serves</span><strong>4</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Knead whole wheat aata dough until smooth and pliable.</li>
+                <li>Prepare sattu filling: mix sattu with ajwain, onion, green chilli, salt, and lemon juice.</li>
+                <li>Stuff each dough ball with sattu mixture and seal tightly.</li>
+                <li>Bake on open charcoal fire until charred and fully cooked through.</li>
+                <li>Dip hot littis generously in Pure Desi Ghee.</li>
+                <li>For chokha: roast and mash brinjal and tomatoes with mustard oil, green chilli, and salt.</li>
+                <li>Serve with chokha, green chutney, and sliced onions.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=litti" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Litti</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Litti%20Chokha%20(Aata%2C%20Baked)" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Litti Chokha (Maida, Fried) -->
+        <div class="recipe-card reveal" id="littimaida">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Litti Chokha Maida Fried" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Litti Chokha (Maida, Fried)</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 45 min</span><span>🍽️ 4 servings</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Maida litti stuffed with sattu filling, deep fried in Desi Ghee until golden crispy, served with smoky chokha.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>25 min</strong></div>
+              <div class="recipe-info-item"><span>Serves</span><strong>4</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Knead maida dough with salt and a little Desi Ghee. Rest 15 minutes.</li>
+                <li>Prepare sattu filling: mix sattu with ajwain, onion, green chilli, salt, and lemon juice.</li>
+                <li>Stuff each dough ball with sattu mixture and seal tightly.</li>
+                <li>Deep fry in Pure Desi Ghee on medium heat until golden and crispy all around.</li>
+                <li>For chokha: roast and mash brinjal and tomatoes with mustard oil, chilli, and salt.</li>
+                <li>Serve hot litti with chokha, chutney, and onion.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=litti" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Litti</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Litti%20Chokha%20(Maida%2C%20Fried)" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gur Thekua -->
+        <div class="recipe-card reveal" id="thekua">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Gur Thekua" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Gur Thekua</h3>
+              <div class="recipe-meta"><span>⭐ 4.9</span><span>🕐 45 min</span><span>🍽️ 20 pcs</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Traditional Mithila Chhath Puja sweet — whole wheat flour and jaggery shaped and fried in pure Desi Ghee.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>20 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>25 min</strong></div>
+              <div class="recipe-info-item"><span>Makes</span><strong>~20 pcs</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Melt jaggery (gur) in warm water to make a syrup. Strain if needed.</li>
+                <li>Mix whole wheat flour with fennel seeds and cardamom powder.</li>
+                <li>Gradually add gur syrup and knead into a firm dough — do not add water.</li>
+                <li>Shape using a traditional thekua mould or press flat with a fork.</li>
+                <li>Deep fry in Pure Desi Ghee on low-medium heat until deep golden.</li>
+                <li>Cool completely before storing — they stay fresh for several days.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=thekua" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Thekua</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Gur%20Thekua" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nimki -->
+        <div class="recipe-card reveal" id="nimki">
+          <div class="recipe-card-img">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" alt="Nimki" loading="lazy"/>
+            <div class="recipe-overlay">
+              <h3>Maida Nimki</h3>
+              <div class="recipe-meta"><span>⭐ 4.7</span><span>🕐 30 min</span><span>🍽️ 30 pcs</span></div>
+            </div>
+          </div>
+          <div class="recipe-body">
+            <p>Crispy, flaky, perfectly salted Bihari namkeen made from maida — best with evening chai.</p>
+            <div class="recipe-info">
+              <div class="recipe-info-item"><span>Prep</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Cook</span><strong>15 min</strong></div>
+              <div class="recipe-info-item"><span>Makes</span><strong>~30 pcs</strong></div>
+              <div class="recipe-info-item"><span>Type</span><strong>🌿 Pure Veg</strong></div>
+            </div>
+            <div class="recipe-steps">
+              <h4>Steps:</h4>
+              <ol>
+                <li>Mix maida with ajwain, black pepper, salt, and a pinch of kalonji.</li>
+                <li>Rub in melted Desi Ghee (moyan) until the flour is crumbly.</li>
+                <li>Add cold water gradually and knead into a stiff dough. Rest 10 minutes.</li>
+                <li>Roll out thin and cut into diamond or square shapes.</li>
+                <li>Deep fry in Pure Desi Ghee on medium-low heat until crispy and golden.</li>
+                <li>Cool fully and store in an airtight container.</li>
+              </ol>
+            </div>
+            <div class="menu-item-actions" style="margin-top:16px;">
+              <a href="menu.html?cat=nimki" class="btn-add-cart" style="text-align:center;display:block;">🛒 Order Nimki</a>
+              <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20order%20Maida%20Nimki" target="_blank" class="btn-buy-now">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/919217556456?text=Hi!%20I%20want%20to%20place%20an%20order%20from%20Chakh%20Lo" target="_blank" class="fab-whatsapp" title="Order on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Chakh <span>लो</span> 🍛</a>
+          <p>Authentic Bihar &amp; Mithila food, made fresh in Delhi — cooked only in Pure Desi Ghee. No preservatives, no shortcuts.</p>
+          <div style="margin:14px 0 4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📍 Delhi, India</div>
+          <div style="margin-bottom:4px;color:rgba(255,255,255,0.6);font-size:0.88rem;">📞 <a href="tel:+919217556456" style="color:rgba(255,255,255,0.75);">+91 92175 56456</a></div>
+          <div style="margin-bottom:18px;color:rgba(255,255,255,0.6);font-size:0.88rem;">✉️ <a href="mailto:chakhloobyngoc@gmail.com" style="color:rgba(255,255,255,0.75);">chakhloobyngoc@gmail.com</a></div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/chakhloobyngoc/" target="_blank" class="social-btn" title="Instagram">📸</a>
+            <a href="https://www.facebook.com/Chakhloobyngoc" target="_blank" class="social-btn" title="Facebook">👍</a>
+            <a href="https://wa.me/919217556456" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-links"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">All Foods</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="blog.html">Food Blog</a></li></ul></div>
+        <div class="footer-links"><h4>Categories</h4><ul><li><a href="menu.html?cat=samosa">🫔 Samosa</a></li><li><a href="menu.html?cat=litti">🔥 Litti</a></li><li><a href="menu.html?cat=thekua">🍪 Thekua</a></li><li><a href="menu.html?cat=nimki">🥨 Nimki</a></li></ul></div>
+        <div class="footer-links"><h4>Contact Us</h4><ul>
+          <li><a href="tel:+919217556456">📞 +91 92175 56456</a></li>
+          <li><a href="mailto:chakhloobyngoc@gmail.com">✉️ Email Us</a></li>
+          <li><a href="https://wa.me/919217556456" target="_blank">💬 WhatsApp Order</a></li>
+          <li><a href="https://www.instagram.com/chakhloobyngoc/" target="_blank">📸 Instagram</a></li>
+          <li><a href="https://www.facebook.com/Chakhloobyngoc" target="_blank">👍 Facebook</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Chakh लो. 🌿 100% Pure Vegetarian. Proudly made in Delhi, inspired by Bihar &amp; Mithila. ❤️ Pure Desi Ghee.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
